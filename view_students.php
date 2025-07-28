@@ -77,7 +77,7 @@ if (!$result) {
             <td><?= $row['FirstName'] ?></td>
             <td><?= $row['LastName'] ?></td>
             <td><?= $row['Height'] ?> cm</td>
-            <!-- <td><?= $row['PhoneNumber'] ?></td> -->
+            <td><?= $row['PhoneNumber'] ?></td> 
         </tr>
         <?php } ?>
     </table>
