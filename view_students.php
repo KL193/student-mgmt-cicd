@@ -69,7 +69,7 @@ if (!$result) {
             <th>First Name</th>
             <th>Last Name</th>
             <th>Height</th>
-            <!-- <th>Phone Number</th> -->
+            <th>Phone Number</th> 
         </tr>
         <?php while($row = $result->fetch_assoc()) { ?>
         <tr>
