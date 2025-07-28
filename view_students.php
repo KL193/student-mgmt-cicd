@@ -1,7 +1,7 @@
 <?php
 include 'db.php';
 
-// Updated SQL to include PhoneNumber
+// You can still include PhoneNumber in the query if needed later
 $sql = "SELECT StudentID, FirstName, LastName, Height, PhoneNumber FROM student";
 $result = $conn->query($sql);
 
@@ -69,7 +69,7 @@ if (!$result) {
             <th>First Name</th>
             <th>Last Name</th>
             <th>Height</th>
-            <th>Phone Number</th> 
+            <!-- <th>Phone Number</th> -->
         </tr>
         <?php while($row = $result->fetch_assoc()) { ?>
         <tr>
@@ -77,7 +77,7 @@ if (!$result) {
             <td><?= $row['FirstName'] ?></td>
             <td><?= $row['LastName'] ?></td>
             <td><?= $row['Height'] ?> cm</td>
-            <td><?= $row['PhoneNumber'] ?></td> <!-- New column data -->
+            <!-- <td><?= $row['PhoneNumber'] ?></td> -->
         </tr>
         <?php } ?>
     </table>
